@@ -1,0 +1,224 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    scroll-behavior: smooth;
+    font-family: 'Josefin Sans', sans-serif;
+    width: 100% ;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+.landing{
+    height: 100vh;
+    width: 100%;
+    background-color:black;
+    user-select:  none !important;
+}
+
+.header{
+    height: auto;
+    width: 100%;
+}
+
+.navbar{
+    width: 100%;
+    left: 25%;
+    top: 35px;
+}
+
+.list {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none; 
+    justify-content: center;
+}
+
+.list li a{
+    text-decoration: none;
+    margin: 0px 50px;
+    color: white;
+    text-transform: uppercase;
+    padding: 2px;
+}
+.list li a:hover{
+    color: indianred;
+}
+
+.headline h1{ 
+    position: relative;
+    font-size: 3rem;
+    color:white;  
+    letter-spacing: 15px;
+    text-align: center;
+    top: 30vh;
+}
+.headline h2{ 
+    position: absolute;
+    font-size: 2rem;
+    color:white;  
+    letter-spacing: 5px;
+    left: 33vw;
+    top: 53vh;
+}
+.word{
+    color: rgb(209, 68, 68);
+    position: absolute;
+    font-size: 2rem;
+    letter-spacing: 5px;
+    text-align: center;
+    left: 45vw;
+    top: 52.5vh;
+}
+.word:before{
+    content: '';
+    animation: animate infinite 8s;
+}
+
+@keyframes animate{
+    0%{
+        content:' WEB DEVELOPER.'
+    }
+    25%{
+        content:' UI/UX DESIGNER.'
+    }
+    50%{
+        content:'FRONT-END DEV.'
+    }
+    75%{
+        content:' BACK-END DEV.'
+    }
+    100%{
+        content:' FULL-STACK DEV.'
+    }
+}
+
+.btn {
+    width: 150px;
+    border: 1px solid rgb(209, 68, 68);
+    color: white;
+    font-size: 0.7rem;
+    letter-spacing: 6px;
+    padding: 12px;
+    border-radius: 30px;
+    position: absolute;
+    left:44vw;
+    top: 65vh;
+}
+.btn:hover{
+    color: black;
+    background-color: rgb(221, 53, 53);
+}
+.about{
+    width: 100%;
+    height: 100vh;
+}
+.services{
+    width: 100%;
+    height: 100vh;
+}
+.portfolio{
+    width: 100%;
+    height: 100vh;
+}
+.contact{
+    width: 100%;
+    height: 100vh;
+    padding: 50px;
+}
+.contact h1{
+    position: absolute;
+    color:rgb(209, 68, 68) ;
+    text-align: center;
+    margin-top: 10px ;
+    margin-bottom: 30px;
+    left: 25vw;
+}
+
+.form form{
+    position: relative;
+    top: 100px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form form input{
+    margin: 20px;
+    padding: 15px;
+    width: 650px;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid black;
+}
+
+.form form input:focus{
+    box-shadow: 0px 0px 9px 0px rgb(240, 204, 204);
+}
+
+textarea{
+    margin: 20px;
+    padding: 15px;
+    width: 650px;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid black;
+}
+
+textarea:focus{
+    box-shadow: 0px 0px 9px 0px rgb(245, 200, 200);
+}
+
+
+.submitbtn{
+    background-color: rgb(209, 68, 68);
+    color: white;
+    font-size: 1rem;
+    font-weight: 300;
+    margin-top: 30px ;
+    margin-bottom: 10px;
+    padding: 15px;
+    width: 130px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+}
+
+.submitbtn:hover{
+    background-color: rgb(209, 68, 68);
+    color: white;
+}
+
+.footer{
+    background-color: black;
+    width: 100%;
+    height: 30vh;
+}
+footer h3{
+    padding: 30px;
+    margin-top: 30px;
+    text-align: center;
+    color: white;
+}
+footer p{
+
+    text-align: center;
+    color: rgb(31, 30, 30);
+}
+.center{
+    text-align: center;
+    padding: 50px;
+}
+.back{
+    width: 250px;
+    color: black;
+    font-size: 3rem;
+    position: relative;
+    left: 27vw;
+    top: 20vh;
+    cursor: pointer;
+}
