@@ -1,3 +1,5 @@
+gsap.registerPlugin(ScrollToPlugin);
+
 document.querySelectorAll(".btn").forEach((btn, index) => {
     btn.addEventListener("click", () => {
       gsap.to(window, {duration: 2 , scrollTo:{y:".contact"}});
